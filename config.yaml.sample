@@ -1,0 +1,4 @@
+key: 'Your AWS key here'
+secret: 'Your AWS secrets here'
+domain_name: 'Your domain name here'
+zone_name: 'Your zone name here'
