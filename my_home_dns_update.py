@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import yaml, boto, urllib2, json
+import os, yaml, boto, urllib2, json
 
 def main():
-    with open('config.yaml', 'rt') as f:
+    path = os.path.dirname(os.path.abspath(__file__))
+    with open(path + '/config.yaml', 'rt') as f:
         data = f.read()
     
     config = yaml.safe_load(data)
